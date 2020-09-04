@@ -30,5 +30,5 @@ workbox.precaching.cleanupOutdatedCaches()
 // Register route handlers for runtimeCaching
 workbox.routing.registerRoute(new RegExp('https://fonts.googleapis.com/.*'), new workbox.strategies.CacheFirst ({"cacheableResponse":{"statuses":[0,200]}}), 'GET')
 workbox.routing.registerRoute(new RegExp('https://fonts.gstatic.com/.*'), new workbox.strategies.CacheFirst ({"cacheableResponse":{"statuses":[0,200]}}), 'GET')
-workbox.routing.registerRoute(new RegExp('/konsens/_nuxt/'), new workbox.strategies.CacheFirst ({}), 'GET')
-workbox.routing.registerRoute(new RegExp('/konsens/'), new workbox.strategies.NetworkFirst ({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/_nuxt/'), new workbox.strategies.CacheFirst ({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/'), new workbox.strategies.NetworkFirst ({}), 'GET')

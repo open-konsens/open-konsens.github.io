@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/adpo", {data:[{}],fetch:[],mutations:[]});
